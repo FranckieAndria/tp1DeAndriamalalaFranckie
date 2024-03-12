@@ -21,7 +21,7 @@ import java.io.Serializable;
 import java.util.Collection;
 
 /**
- *
+ * Entité de MICRO_MARKET
  * @author andriamalala
  */
 @Entity

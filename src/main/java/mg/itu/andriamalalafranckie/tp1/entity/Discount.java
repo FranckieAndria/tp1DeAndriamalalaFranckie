@@ -22,7 +22,7 @@ import java.math.BigDecimal;
 import java.util.Collection;
 
 /**
- *
+ * Entité de DISCOUNT
  * @author andriamalala
  */
 @Entity

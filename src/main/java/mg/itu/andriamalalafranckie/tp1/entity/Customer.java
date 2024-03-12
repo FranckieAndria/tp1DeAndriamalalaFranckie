@@ -19,7 +19,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
- *
+ * Entité de CUSTOMER
  * @author andriamalala
  */
 @Entity
