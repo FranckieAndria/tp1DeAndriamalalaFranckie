@@ -7,8 +7,6 @@
         <title>Liste des clients</title>
     </h:head>
     <h:body>
-        Hello from Facelets
-
         <h:dataTable value="#{customerBean.customers}"
                      var="item">
             <h:column>
@@ -36,7 +34,7 @@
                 <f:facet name="header">
                     <h:outputText value="Code de reduction"/>
                 </f:facet>
-                <h:outputText value="#{item.discount}"/>
+                <h:outputText value="#{item.discount.code} : #{item.discount.rate} %"/>
             </h:column>
         </h:dataTable>
     </h:body>
