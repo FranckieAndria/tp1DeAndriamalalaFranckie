@@ -19,22 +19,26 @@ import mg.itu.andriamalalafranckie.tp1.entity.Customer;
  */
 @RequestScoped
 public class CustomerManager {
-    
+
     @PersistenceContext
     private EntityManager em;
-    
+
     public void persist(Customer customer) {
         em.persist(customer);
     }
-    
+
     public List<Customer> getAllCustomers() {
         Query query = em.createNamedQuery("Customer.findAll");
         return query.getResultList();
     }
-    
+
+    public Customer findById(int idCustomer) {
+        return em.find(Customer.class, idCustomer);
+    }
+
     @Transactional
     public Customer update(Customer customer) {
         return em.merge(customer);
     }
-    
+
 }
